@@ -1,10 +1,14 @@
 import React from 'react';
 import '../Header/Header.scss';
+import { useNavigate } from 'react-router';
 import GitLogo from '../../assets/Images/logo.svg'
 import Alarm from '../../assets/Images/bell.svg';
 import Me from '../../assets/Images/me.jpg';
 
-const Header = ({img}) => {
+const Header = ({ img}) => {
+
+    const out = useNavigate();
+
     return (
         <div className='header pt-3 mb-5 pb-3'>
             <div className='container d-flex justify-content-between'>
@@ -33,8 +37,8 @@ const Header = ({img}) => {
                         <img className='header__alarmIcon' src={Alarm} alt="Bell" width='20' height='25' />
                     </a>
                     <div className='dropdown mx-3'>
-                    <a className="header__dropdownLink dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                        +
+                        <a className="header__dropdownLink dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            +
                         </a>
                         <ul className="dropdown-menu p-2">
                             <li><a className="header__dropdownItem" href="#">New repository</a></li>
@@ -54,7 +58,11 @@ const Header = ({img}) => {
                             <li><a className="header__dropdownItem" href="#">Your repostories</a></li>
                             <li><a className="header__dropdownItem" href="#">Your projects</a></li>
                             <li><a className="header__dropdownItem" href="#">Settings</a></li>
-                            <li><a className="header__dropdownItem" href="#">Log out</a></li>
+                            <li><a className="header__dropdownItem" href="#" onClick={() => {
+                                return (
+                                    out('/login')
+                                )
+                            }}>Log out</a></li>
                         </ul>
                     </div>
 
