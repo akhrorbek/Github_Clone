@@ -1,0 +1,52 @@
+.profile {
+    max-width: 300px;
+    &__heading {
+        margin: 0;
+        padding: 0;
+    }
+    &__subHeading {
+        margin: 0;
+        padding: 0;
+        opacity: 0.8;
+        font-weight: 400;
+    }
+    &__button {
+        width: 280px;
+    }
+    &__follower {
+        margin: 0;
+        padding: 0;
+    }
+    &__followerLink {
+        color: black;
+        text-decoration: none;
+    }
+    &__followingLink {
+        color: black;
+        text-decoration: none;
+    }
+    &__following {
+        margin: 0;
+        padding: 0;
+    }
+    &__followerNum {
+        font-weight: 600;
+    }
+    &__addressList {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    &__addressItemImg {
+        margin-right: 8px;
+    }
+    &__addressItemLink {
+        text-decoration: none;
+        color: rgb(5, 5, 5);
+    }
+    &__reportLink {
+        color: rgb(58, 57, 57);
+        text-decoration: none;
+    }
+
+}

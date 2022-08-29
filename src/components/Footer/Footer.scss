@@ -1,0 +1,33 @@
+.footer {
+    &__logo {
+        opacity: 0.7;
+    }
+    &__wrap {
+        padding-top: 50px;
+        border-top: solid rgb(214, 204, 204) 0.2px;
+    }
+    &__logoWrap {
+        text-decoration: none;
+    }
+    &__logoText{
+        margin: 0;
+        padding: 0;
+        color: black;
+        opacity: 0.8;
+        font-size: 12px;
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__item {
+        font-size: 12px;
+    }
+    &__item + &__item {
+        margin-right: 40px;
+    }
+    &__itemLink {
+        text-decoration: none;
+    }
+}

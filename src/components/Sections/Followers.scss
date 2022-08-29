@@ -1,0 +1,14 @@
+.follower {
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__listItem {
+        border-bottom: solid rgb(214, 204, 204) 0.2px;
+    }
+    &__followerName {
+        text-decoration: none;
+        color: rgba(63, 63, 63, 0.966);
+    }
+}

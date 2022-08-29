@@ -1,0 +1,44 @@
+.hero {
+    border-bottom: solid rgb(214, 204, 204) 0.2px;
+    &__navList {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__navLink {
+        text-decoration: none;
+        color: black;
+        padding: 20px;
+        border-radius: 5px;
+        &:hover {
+            background-color: rgb(179, 172, 172);
+        }
+    }
+    &__navItem + &__navItem {
+        margin-left: 35px;
+    }
+
+
+    &__navimg {
+        margin-right: 5px;
+    }
+
+
+
+
+    &__active {
+        text-decoration: none;
+        font-weight: 600;
+        color: black;
+        padding-bottom: 15px;
+        border-bottom: solid rgb(201, 33, 33) 3px;
+    }
+
+
+    &__reposNumber {
+        padding:0 8px 0 6px;
+        border-radius: 10px;
+        background-color: rgb(227, 232, 236);
+    }
+
+}

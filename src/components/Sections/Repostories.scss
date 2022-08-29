@@ -1,0 +1,16 @@
+.repostories {
+    &__item {
+        border-bottom: solid rgb(214, 204, 204) 0.2px;
+    }
+    &__itemLinkHeading {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    &__itemLinkButton {
+        margin-left: 10px;
+        border:solid rgb(214, 204, 204) 0.1px;
+        border-radius: 8px;
+        padding:0 5px 0 5px;
+    }
+}
